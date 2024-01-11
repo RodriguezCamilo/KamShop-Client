@@ -29,7 +29,7 @@ function PasswordRecovery() {
         if (data.newPassword == data.newPassword2) {
             try {
                 setProgress(true)
-                await fetch(`http://localhost:3000/api/users/reset-password/${recovery}`, {
+                await fetch(`https://kamshop.onrender.com/api/users/reset-password/${recovery}`, {
                     method: 'POST',
                     headers: {
                         'Content-type': 'application/json'

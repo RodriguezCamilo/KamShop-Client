@@ -19,7 +19,7 @@ export default function Carrousel({ imgs }) {
             <div className='absolute bottom-4 right-0 left-0'>
                 <div className='flex items-center justify-center gap-2'>
                     {imgs?.map((_, i) => (
-                        <div className={`transition-all sm:w-3 sm:h-3 h-1 w-1 bg-black rounded-full ${curr == i ? "p-1" : "bg-opacity-50"}`}/>
+                        <div key={i} className={`transition-all sm:w-3 sm:h-3 h-1 w-1 bg-black rounded-full ${curr == i ? "p-1" : "bg-opacity-50"}`}/>
                     ))}
                 </div>
             </div>

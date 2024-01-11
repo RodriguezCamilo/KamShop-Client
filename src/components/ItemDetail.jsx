@@ -17,7 +17,7 @@ function ItemDetail({ _id, title, description, price, stock, thumbnail }) {
     const cart = userInfo.user.cart
 
     try {
-      await fetch(`http://localhost:3000/api/carts/${cart}/products/${_id}`, {
+      await fetch(`https://kamshop.onrender.com/api/carts/${cart}/products/${_id}`, {
         method: 'POST',
         headers: {
           'Authorization': `${token}`,

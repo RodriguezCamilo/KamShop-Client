@@ -26,7 +26,7 @@ function PasswordRecovery() {
         const data = Object.fromEntries(dataForm)
         try {
             setProgress(true)
-            await fetch('http://localhost:3000/api/users/recovery-password', {
+            await fetch('https://kamshop.onrender.com/api/users/recovery-password', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json'

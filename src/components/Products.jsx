@@ -11,7 +11,7 @@ export default function Home() {
   const [price, setPrice] = useState(1)
   const [category, setCategory] = useState()
 
-  const url = `http://localhost:3000/api/products/?limit=8&page=${currentPage}&category=${category}&sort=${price}`
+  const url = `https://kamshop.onrender.com/api/products/?limit=8&page=${currentPage}&category=${category}&sort=${price}`
 
 
   //}&sort=${price}

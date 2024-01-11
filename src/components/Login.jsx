@@ -25,7 +25,7 @@ export default function Login() {
         const data = Object.fromEntries(dataForm)
         try {
             setProgress(true)
-            await fetch('http://localhost:3000/api/session/login', {
+            await fetch('https://kamshop.onrender.com/api/session/login', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json'

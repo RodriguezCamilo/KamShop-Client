@@ -10,7 +10,7 @@ export const Logout = () => {
     const navigate = useNavigate()
     const handleClick = async (e) => {
         try {
-            await fetch('http://localhost:3000/api/session/logout', {
+            await fetch('https://kamshop.onrender.com/api/session/logout', {
                 method: 'GET',
                 credentials: 'include',
                 headers: {

@@ -24,7 +24,7 @@ const Register = () => {
         if (isLogged) navigate('/')
         try {
             setProgress(true)
-            await fetch('http://localhost:3000/api/session/register', {
+            await fetch('https://kamshop.onrender.com/api/session/register', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json'

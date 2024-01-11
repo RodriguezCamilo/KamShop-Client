@@ -43,7 +43,7 @@ const NewProduct = () => {
         const token = getCookiesByName('jwtCookie')
         try {
             setProgress(true)
-            await fetch('http://localhost:3000/api/products', {
+            await fetch('https://kamshop.onrender.com/api/products', {
                 method: 'POST',
                 headers: {
                     'Authorization': `${token}`,

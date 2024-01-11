@@ -13,7 +13,7 @@ export const CartProvider = ({ children }) => {
     const [ticketData, setTicketData] = useState(null)
 
     const handleCart = async () => {
-        await fetch(`http://localhost:3000/api/carts/${cart}`, {
+        await fetch(`https://kamshop.onrender.com/api/carts/${cart}`, {
             method: 'GET',
             headers: {
                 'Authorization': `${token}`,
