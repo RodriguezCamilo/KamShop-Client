@@ -4,7 +4,7 @@ import { LoggedContext } from '../context/LoggedContext.jsx';
 import { useNavigate } from 'react-router-dom';
 import CartProductList from './CartProductList.jsx';
 import { CartContext } from '../context/CartContext.jsx';
-import {Price} from "../components/Price.jsx"
+import Price from "../components/Price.jsx"
 
 
 function Cart() {
