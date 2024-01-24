@@ -41,7 +41,7 @@ export const CartProvider = ({ children }) => {
     }
 
     const handleEmpty = async () => {
-        await fetch(`http://localhost:3000/api/carts/${cart}`, {
+        await fetch(`https://kamshop.onrender.com/api/carts/${cart}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `${token}`,
@@ -52,7 +52,7 @@ export const CartProvider = ({ children }) => {
 
     const handlePurchase = async () => {
         if (cartData[0] != undefined) {
-            await fetch(`http://localhost:3000/api/carts/${cart}/purchase`, {
+            await fetch(`https://kamshop.onrender.com/api/carts/${cart}/purchase`, {
                 method: 'POST',
                 headers: {
                     'Authorization': `${token}`,
